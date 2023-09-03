@@ -1,0 +1,32 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
+{
+  "name": "QMK Development",
+
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "build": { "dockerfile": "Dockerfile", "args": { "TAG": "0.16.3" } },
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "uname -a",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": { "extensions": ["ms-vscode.cpptools-extension-pack"] }
+  },
+
+  "workspaceFolder": "/qmk_firmware",
+
+  "mounts": [
+    "source=${env:HOME}/.config/git/config,target=/home/root/.gitconfig,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/qmk_firmware/keyboards,target=/qmk_firmware/keyboards,type=bind"
+  ],
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "vscode"
+}
