@@ -1,1 +1,3 @@
 tmp/
+.build/
+.Ds_Store

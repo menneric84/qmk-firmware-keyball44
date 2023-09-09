@@ -24,7 +24,9 @@
 
   "mounts": [
     "source=${env:HOME}/.config/git/config,target=/home/root/.gitconfig,type=bind,consistency=cached",
-    "source=${localWorkspaceFolder}/qmk_firmware/keyboards,target=/qmk_firmware/keyboards,type=bind"
+    "source=${localWorkspaceFolder}/qmk_firmware/keyboards,target=/qmk_firmware/keyboards,type=bind",
+    "source=${localWorkspaceFolder}/qmk_firmware/.build,target=/qmk_firmware/.build,type=bind",
+    "source=${localWorkspaceFolder}/.vscode,target=/qmk_firmware/.vscode,type=bind"
   ],
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
