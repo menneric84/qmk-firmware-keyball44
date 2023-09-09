@@ -26,7 +26,7 @@ jobs:
 
     - run: qmk compile -j 4 -kb keyball/keyball44 -km default
 
-    - run: qmk compile -j 4 -kb keyball/keyball44 -km test
+    - run: qmk compile -j 4 -kb keyball/keyball44 -km futabooo
 
     - run: qmk compile -j 4 -kb keyball/keyball44 -km via
 
