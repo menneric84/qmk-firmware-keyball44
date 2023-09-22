@@ -32,30 +32,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT_universal(
     KC_GRV   ,  KC_EXLM , KC_AT    , KC_HASH , KC_DLR   , KC_PERC  ,                                         KC_CIRC  , KC_AMPR  , KC_ASTR  , KC_LPRN  , KC_RPRN  , KC_MINS  ,
-    XXXXXXX  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , XXXXXXX  , KC_UP    , KC_LBRC  , KC_RBRC  , KC_EQL   ,
-    KC_LSFT  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , KC_LEFT  , KC_DOWN  , KC_RGHT  , XXXXXXX  , KC_BSLS  ,
-                  XXXXXXX  , XXXXXXX  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  ,        XXXXXXX  , XXXXXXX  , XXXXXXX
+    _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , XXXXXXX  , KC_UP    , KC_LBRC  , KC_RBRC  , KC_EQL   ,
+    _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , KC_LEFT  , KC_DOWN  , KC_RGHT  , XXXXXXX  , KC_BSLS  ,
+                  XXXXXXX  , XXXXXXX  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , KC_RCMD  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 
   [2] = LAYOUT_universal(
-    XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-    XXXXXXX , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                         KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , XXXXXXX  ,
     XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-                  XXXXXXX  , KC_DOT  ,            XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  ,        XXXXXXX  , XXXXXXX  , XXXXXXX
+    _______ , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                         KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , XXXXXXX  ,
+    _______ , XXXXXXX  , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX   ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+                  XXXXXXX  , XXXXXXX  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , _______  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 
   [3] = LAYOUT_universal(
     XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-    XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , SCRL_DVI ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-    KC_LSFT  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , SCRL_DVD ,                                        CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , XXXXXXX  , KBC_SAVE ,
-                  QK_BOOT  , KBC_RST  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  ,        XXXXXXX  , XXXXXXX  , QK_BOOT
+    _______  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , SCRL_DVI ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+    _______  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , SCRL_DVD ,                                        CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , XXXXXXX  , KBC_SAVE ,
+                  QK_BOOT  , KBC_RST  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , _______  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 
   [4] = LAYOUT_universal(
     XXXXXXX  ,  XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-    XXXXXXX  ,  XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , KC_BTN1  , KC_BTN2  , KC_BTN3  , XXXXXXX  , XXXXXXX  ,
-    XXXXXXX  ,  XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-                  XXXXXXX  , XXXXXXX ,            XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  ,        XXXXXXX  , XXXXXXX  , XXXXXXX
+    _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , KC_BTN1  , KC_BTN2  , KC_BTN3  , XXXXXXX  , XXXXXXX  ,
+    _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                        XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+                  XXXXXXX  , XXXXXXX ,            XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 };
 // clang-format on
