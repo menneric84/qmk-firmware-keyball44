@@ -38,10 +38,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [2] = LAYOUT_universal(
-    XXXXXXX  ,S(KC_QUOT), KC_7     , KC_8    , KC_9     , S(KC_8)  ,                                         S(KC_9)  , S(KC_1)  , S(KC_6)  , KC_LBRC  , S(KC_4)  , XXXXXXX  ,
-    XXXXXXX  ,S(KC_SCLN), KC_4     , KC_5    , KC_6     , KC_RBRC  ,                                         KC_NUHS  , KC_MINS  , S(KC_EQL), S(KC_3)  , KC_QUOT  , S(KC_2)  ,
-    XXXXXXX  ,S(KC_MINS), KC_1     , KC_2    , KC_3     ,S(KC_RBRC),                                        S(KC_NUHS),S(KC_INT1), KC_EQL   ,S(KC_LBRC),S(KC_SLSH),S(KC_INT3),
-                  KC_0     , KC_DOT  , XXXXXXX  ,         XXXXXXX  , XXXXXXX  ,                   KC_DEL   , XXXXXXX  , XXXXXXX       , XXXXXXX  , XXXXXXX
+    XXXXXXX , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+    XXXXXXX , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                         KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , XXXXXXX  ,
+    XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+                  XXXXXXX     , KC_DOT  , XXXXXXX  ,         XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , XXXXXXX  , XXXXXXX       , XXXXXXX  , XXXXXXX
   ),
 
   [3] = LAYOUT_universal(
