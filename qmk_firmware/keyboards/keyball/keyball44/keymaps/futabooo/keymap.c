@@ -34,14 +34,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV   ,  KC_EXLM , KC_AT    , KC_HASH , KC_DLR   , KC_PERC  ,                                         KC_CIRC  , KC_AMPR  , KC_ASTR  , KC_LPRN  , KC_RPRN  , KC_MINS  ,
     _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , XXXXXXX  , KC_UP    , KC_LBRC  , KC_RBRC  , KC_EQL   ,
     _______  ,  XXXXXXX , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX  ,                                         XXXXXXX  , KC_LEFT  , KC_DOWN  , KC_RGHT  , XXXXXXX  , KC_BSLS  ,
-                  XXXXXXX  , XXXXXXX  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , KC_RCMD  ,        XXXXXXX  , XXXXXXX  , _______
+                  _______  , _______  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , KC_RCMD  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 
   [2] = LAYOUT_universal(
-    XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
+    XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXjjX  ,
     _______ , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                         KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , XXXXXXX  ,
     _______ , XXXXXXX  , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX   ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
-                  XXXXXXX  , XXXXXXX  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , _______  ,        XXXXXXX  , XXXXXXX  , _______
+                  _______  , _______  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , _______  ,        XXXXXXX  , XXXXXXX  , _______
   ),
 
   [3] = LAYOUT_universal(
