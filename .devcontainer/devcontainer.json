@@ -4,7 +4,7 @@
   "name": "QMK Development",
 
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "build": { "dockerfile": "Dockerfile", "args": { "TAG": "0.22.3" } },
+  "build": { "dockerfile": "Dockerfile", "args": { "TAG": "0.22.11" } },
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
