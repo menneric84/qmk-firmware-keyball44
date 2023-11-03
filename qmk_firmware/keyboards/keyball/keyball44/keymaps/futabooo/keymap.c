@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [2] = LAYOUT_universal(
-    XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXjjX  ,
+    XXXXXXX , C(KC_1)  , C(KC_2)  , C(KC_3)  , C(KC_4)  , C(KC_5)  ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
     _______ , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                         KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , XXXXXXX  ,
     _______ , XXXXXXX  , XXXXXXX  , XXXXXXX , XXXXXXX  , XXXXXXX   ,                                         XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  , XXXXXXX  ,
                   _______  , _______  ,           XXXXXXX  ,  XXXXXXX  , XXXXXXX  ,                   XXXXXXX  , _______  ,        XXXXXXX  , XXXXXXX  , _______
