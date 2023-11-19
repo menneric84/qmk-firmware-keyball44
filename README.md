@@ -18,10 +18,10 @@ A split keyboard with 44 vertically staggered keys and 34mm track ball.
 2. Check out [qmk/qmk_firmware](https://github.com/qmk/qmk_firmware/) repository in another place.
 
     ```console
-    $ git clone https://github.com/qmk/qmk_firmware.git --depth 1 --recurse-submodules --shallow-submodules -b 0.22.3 qmk
+    $ git clone https://github.com/qmk/qmk_firmware.git --depth 1 --recurse-submodules --shallow-submodules -b 0.22.11 qmk
     ```
 
-    Currently Keyball firmwares are verified to compile with QMK 0.22.3
+    Currently Keyball firmwares are verified to compile with QMK 0.22.11
 
 3. Create a symbolic link to this `keyball/` directory from [qmk/qmk_firmware]'s `keyboards/` directory.
 
@@ -60,7 +60,7 @@ A split keyboard with 44 vertically staggered keys and 34mm track ball.
 ***NOTE***
 
 * The values are for VIA/Remap
-* The values are for QMK/0.22.3. It will be different when you use another version of QMK.
+* The values are for QMK/0.22.11. It will be different when you use another version of QMK.
 
 ## How to create your keymap
 
