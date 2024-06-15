@@ -39,6 +39,8 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/qmk/qmk_cli:latest
     needs: [ build ]
     if: github.ref_type == 'tag' && startsWith(github.ref_name, 'keyball44/v')
 

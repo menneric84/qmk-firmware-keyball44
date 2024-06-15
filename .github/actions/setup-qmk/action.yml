@@ -22,14 +22,6 @@ runs:
       submodules: recursive
       ref: ${{ inputs.version }}
 
-  - name: Install git and pip
-    shell: bash
-    run: sudo apt-get install -y git python3-pip
-
-  - name: Install QMK CLI
-    shell: bash
-    run: python3 -m pip install --user qmk
-
   - name: Setup QMK
     shell: bash
     run: qmk setup --home ${{ inputs.path }} --yes
