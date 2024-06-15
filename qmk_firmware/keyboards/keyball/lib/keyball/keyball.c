@@ -33,7 +33,7 @@ const uint16_t AML_TIMEOUT_MIN = 100;
 const uint16_t AML_TIMEOUT_MAX = 1000;
 const uint16_t AML_TIMEOUT_QU  = 50;   // Quantization Unit
 
-#define BL '\xB0' // Blank indicator character
+static const char BL = '\xB0'; // Blank indicator character
 static const char LFSTR_ON[] PROGMEM = "\xB2\xB3";
 static const char LFSTR_OFF[] PROGMEM = "\xB4\xB5";
 
@@ -508,21 +508,6 @@ void keyball_oled_render_layerinfo(void) {
 #    else
     oled_write_P(PSTR("\xC2\xC3\xB4\xB5 ---"), false);
 #    endif
-#endif
-}
-
-void keyball_oled_render_layerinfo(void) {
-#ifdef OLED_ENABLE
-    // Format: `Layer:{layer state}`
-    //
-    // Output example:
-    //
-    //     Layer:-23------------
-    //
-    oled_write_P(PSTR("Layer:"), false);
-    for (uint8_t i = 1; i < 16; i++) {
-        oled_write_char((layer_state_is(i) ? to_1x(i) : '_'), false);
-    }
 #endif
 }
 
