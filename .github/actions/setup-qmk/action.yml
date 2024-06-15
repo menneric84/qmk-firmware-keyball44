@@ -1,4 +1,4 @@
-name: 'Checkout QMK firmware'
+name: 'Setup QMK firmware'
 
 inputs:
   version:
@@ -21,6 +21,14 @@ runs:
       repository: qmk/qmk_firmware
       submodules: recursive
       ref: ${{ inputs.version }}
+
+  - name: Install git and pip
+    shell: bash
+    run: sudo apt-get install -y git python3-pip
+
+  - name: Install QMK CLI
+    shell: bash
+    run: python3 -m pip install --user qmk
 
   - name: Setup QMK
     shell: bash
