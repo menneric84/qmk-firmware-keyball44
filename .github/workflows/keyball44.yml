@@ -33,7 +33,7 @@ jobs:
     - run: qmk compile -j 4 -kb keyball/keyball44 -km via
 
     - name: Archive firmwares
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5.0
       with:
         name: keyball44-firmwares
         path: __qmk__/*.hex
@@ -46,13 +46,13 @@ jobs:
 
     steps:
     - name: Download built firmwares
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
       with:
         name: keyball44-firmwares
     - name: List assets
       run: ls -l *.hex
     - name: Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@7b4da11513bf3f43f9999e90eabced41ab8bb048 # v2.2.0
       with:
         draft: true
         prerelease: ${{ contains(github.ref_name, '-alpha.') || contains(github.ref_name, '-beta.') }}
