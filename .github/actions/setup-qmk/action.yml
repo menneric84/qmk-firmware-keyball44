@@ -1,21 +1,22 @@
 name: 'Setup QMK firmware'
+description: 'Setup QMK firmware for building'
 
 inputs:
   version:
     default: '0.22.14'
-    type: string
     required: false
+    description: 'QMK firmware version to use'
   path:
     default: '__qmk__'
-    type: string
     required: false
+    description: 'Path to store QMK firmware'
 
 runs:
   using: 'composite'
   steps:
 
   - name: Checkout qmk_firmware
-    uses: actions/checkout@v4
+    uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
     with:
       path: ${{ inputs.path }}
       repository: qmk/qmk_firmware
